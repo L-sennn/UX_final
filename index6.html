@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LANTOUR Min3</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="text/javascript" src="wow.min.js"></script>
+    <style type="text/css">
+            @font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+    
+        html{font-family: 'NeoDunggeunmo'; scroll-behavior: smooth; background: black;}
+        body, nav, section, ul, li, p, h1, h2{margin: 0;}
+        
+        .flex{display: flex;}
+        .row{width: 1000px; margin: auto;}
+
+        section{margin-bottom: 100px;}
+
+        hr{border:none; border:2px dashed; border-color: white; margin-top: 50px;}
+
+        img{width: 80%; display: block; margin: auto; margin-bottom: 30px;}
+
+        a{display: block;
+            text-decoration: none;}
+
+        nav{margin: auto;
+            position: fixed; top: 0;
+            width: 100%;
+            height: 70px;
+            background-color:rgba(0, 0, 0, 0.8);
+            z-index: 20;
+            margin-bottom: 20px;}
+
+        .gnb{width: 1000px;
+            margin:auto;}
+
+        .logo{margin: auto;;
+            height: 70px; 
+            line-height: 70px; 
+            width: 100px;
+            float: left;}
+
+        nav a:hover{color: #0000ff;}
+
+        nav a{color: white;}
+
+        nav ul{width: 600px;
+            height: 70px;
+            float: right;}
+        nav li{width:20%;
+            list-style-type: none;
+            height: 70px;
+            line-height: 70px;
+            float: right;}
+
+        .top{position: fixed; right: 30px; bottom: 30px; width: 70px; z-index: 10}
+        #top{padding-top: 70px;}
+        
+
+        h1{font-size: 2em; line-height: 1.3em; word-spacing: -7px; color: white;}
+        h2{font-size: 1.3em; line-height: 1.5em; word-spacing: -3px; color: white;}
+        p{font-size: 1em; color: white}
+        .blue{color: blue}
+        .black{color: black}
+        .right{text-align: right}
+        .center{text-align: center}
+
+        .mark_blue{background-color: #0000ff;
+            color: white;}
+        .mark_red{background-color: red;
+            color: white;}
+
+        .section1{position: relative; margin-bottom: 100px;}
+        .full{width: 100%; position: relative; background: black; z-index: 10;}
+        .map{width: 500px; margin: auto; margin-top: 50px; margin-bottom: 50px;}
+        .box_barceloneta{width: 145px; height: 25px; background: yellow;
+                position: absolute; left: 595px; top: 640px; opacity: 0}
+        .map_barceloneta{width: 400px;
+                position: absolute; left: 600px; top: 330px; opacity: 0}
+        .area{position: absolute;left: 400px; top: 140px; opacity: 0}
+
+        #box_barceloneta:hover ~ #map_barceloneta{opacity: 1} 
+        #box_barceloneta:hover ~ #area_barceloneta{opacity: 1}
+
+        .section2{position: relative; margin-bottom: 700px; margin-top: 200px;}
+        .beach{width: 100%; position: fixed; bottom: 0; margin: 0}
+        
+        #audio{border:0; position: fixed; top: 0px; left: 50px;}
+
+        .sleep{width: 400px; margin-top: 100px;}
+
+        .footer{margin-bottom: 300px;}
+
+        .bttani{animation:btt 6s; }
+        @keyframes btt{
+            from{opacity: 0; margin-top: 100px;}
+            to{opacity: 1; margin-top: 0px;}
+        }
+
+    </style> 
+</head>
+
+<body>
+    <nav>
+        <div class="gnb">
+            <h3 class="logo"><a href="index3.html">LANTOUR</a></h3>
+            <ul>
+                <li><a href="index6.html" class="nav3"><p class="right">Min03</p></a></li>
+                <li><a href="index5.html" class="nav2"><p class="right">Min02</p></a></li>
+                <li><a href="index4.html" class="nav1"><p class="right">Min01</p></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <a href="#top"><img src="top.png" class="top"></a>
+
+    <section class="full">
+        <section class="section1 row" id="top">        
+           <h1 class="center"><mark class="mark_blue">&nbsp;Min03 : Healing&nbsp;</mark></h1>
+           <h2 class="center">바르셀로네타 해변</h2>
+           <img src="min3_map.png" class="map">
+           <div class="box_barceloneta" id="box_barceloneta"></div>
+           <img src="min3_map_barceloneta.jpg" id="map_barceloneta" class="map_barceloneta">
+           <h2 class="area" id="area_barceloneta">41⁰22’42”N 2⁰11’32”E</h2>
+           <h2 class="center">위치명에 마우스를 올리면 위치 정보가 표시됩니다.<br>LANTOUR 3분차에는 여러분에게 휴식을 선사합니다.</h2>
+           <hr>
+        </section>
+    </section>
+
+    <section class="section2">
+        <div class="row">
+            <h1 class="center wow bttani"><mark class="mark_red">&nbsp;바르셀로네타 해변&nbsp;</mark></h1>
+            <h2 class="center wow bttani">스페인에는 'La siesta'라는 <br>낮잠 시간이 있다는 걸 알고 계시나요?<br>스페인 사람들은 이 낮잠 시간에<br>하루의 일과를 잠시 멈추고 저마다의 휴식 시간을 가지는데요.</h2>
+            <img src="https://media.giphy.com/media/lDprnB0tX1mxy/giphy.gif" class="sleep wow bttani">
+        </div>
+    </section>  
+
+
+<section class="section2">
+        <div class="row">
+            <h2 class="center wow">쉼 없이 달려온 우리에게 가장 필요한 게<br>이러한 휴식 아닐까요?<br>여러분도 지평선을 바라보며 파도 소리와 함께<br>짧은 휴식을 취해보시길 바랍니다.</h2>
+            <img src="https://media.giphy.com/media/GRthfpAwOqcoM/source.gif" class="sleep wow bttani">
+        </div>
+    </section> 
+
+
+    <section class="section2">
+        <div class="row">
+            <h2 class="center wow bttani">그동안 쌓인 스트레스와 피로가<br> 풀리는 걸 느끼실 수 있을거예요.</h2>
+        </div>
+    </section> 
+
+    <section class="section2">
+        <div class="row">
+            <h2 class="center wow bttani">그럼 여행에 함께 해주신 여러분께<br> 진심으로 감사드리며<br>LANTOUR는 여기서 마무리 짓도록 하겠습니다.<br>다시 한 번 감사드립니다.</h2>
+            <img src="https://media.giphy.com/media/3oz8xuflXVQerHqDCM/giphy.gif" class="sleep wow bttani">
+        </div>
+    </section> 
+
+    <section class="footer">
+    <p class="center">copyrightⓒ 2020 All rights reserved by @say_sennnnn</p>
+    </section>
+
+    <section>
+        <iframe src="min3_beach.mp3" allow="autoplay" id="audio"></iframe>
+        <img src="min3_beach.png" class="beach">
+    </section>
+
+
+
+
+
+        new WOW().init();
+        console.log("ok");
+    </script>
+</body>
+
+</html>

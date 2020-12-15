@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LANTOUR Min1</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        jQuery("#btn").click(function() {
+
+            if(jQuery("#displayDiv").css("display") == "block") {
+
+                jQuery("#displayDiv").css("display", "none");
+            }
+           
+            else {
+
+                jQuery("#displayDiv").css("display", "block");
+            }
+        });
+    });
+	</script>
+
+	<style type="text/css">
+			@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+	
+		html{font-family: 'NeoDunggeunmo'; scroll-behavior: smooth; background: black;}
+		body, nav, section, ul, li, p, h1, h2{margin: 0;}
+		
+		.flex{display: flex;}
+		.row{width: 1000px; margin: auto;}
+
+		section{margin-bottom: 100px;}
+
+		hr{border:none; border:2px dashed; border-color: white; margin-top: 50px;}
+
+		img{width: 80%; display: block; margin: auto; margin-bottom: 30px;}
+
+		a{display: block;
+			text-decoration: none;}
+
+		nav{margin: auto;
+			position: fixed; top: 0;
+			width: 100%;
+			height: 70px;
+			background-color:rgba(0, 0, 0, 0.8);
+			z-index: 20;
+			margin-bottom: 20px;}
+
+		.gnb{width: 1000px;
+			margin:auto;}
+
+		.logo{margin: auto;;
+			height: 70px; 
+			line-height: 70px; 
+			width: 100px;
+			float: left;}
+
+		nav a:hover{color: #0000ff;}
+
+		nav a{color: white;}
+
+		nav ul{width: 600px;
+			height: 70px;
+			float: right;}
+		nav li{width:20%;
+			list-style-type: none;
+			height: 70px;
+			line-height: 70px;
+			float: right;}
+
+		.top{position: fixed; right: 30px; bottom: 30px; width: 70px; z-index: 10}
+		#top{padding-top: 70px;}
+		
+
+		h1{font-size: 2em; line-height: 1.3em; word-spacing: -7px; color: white;}
+		h2{font-size: 1.3em; line-height: 1.5em; word-spacing: -3px; color: white;}
+		p{font-size: 1em; color: white}
+		.blue{color: blue}
+		.black{color: black}
+		.right{text-align: right}
+		.center{text-align: center}
+
+		.mark_blue{background-color: #0000ff;
+			color: white;}
+		.mark_red{background-color: red;
+			color: white;}
+
+		.section1{position: relative;}
+		.map{width: 500px; margin: auto; margin-top: 50px; margin-bottom: 50px;}
+		.box_guel{width: 83px; height: 25px; background: yellow;
+				position: absolute; left: 290px; top: 230px; opacity: 0}
+		.box_sagrada{width: 155px; height: 25px; background: white
+				;position: absolute; left: 460px; top: 345px;opacity: 0}
+		.map_guel{width: 400px;
+				position: absolute; left: -160px; top: 150px; opacity: 0}
+		.map_sagrada{width: 400px;
+				position: absolute; left: 660px; top: 310px; opacity: 0}
+		.area{position: absolute;left: 400px; top: 140px; opacity: 0}
+
+		#box_guel:hover ~ #map_guel{opacity: 1} 
+		#box_sagrada:hover ~ #map_sagrada{opacity: 1}
+		#box_guel:hover ~ #area_guel{opacity: 1}
+		#box_sagrada:hover ~ #area_sagrada{opacity: 1}
+
+
+		.section_camera{position: relative; z-index: 8}
+		.camera{width: 800px; position: fixed; top: 100px; margin: 0 auto; left: 0; right: 0;
+				animation: rr 1s infinite linear; animation-direction:alternate}
+		.flash{width: 400px; position: fixed; top: 100px; right: 400px;}
+		.flash2{width: 300px; position: fixed; top: 550px; left: 250px;}
+		.camera_text{position: fixed; top: 300px; left: 100px;}
+		.camera_text2{position: fixed; top: 340px; left: 130px;}
+		.camera_text3{position: fixed; top: 200px; left: 330px;}
+		.camera_text4{position: fixed; top: 530px; right: 130px;}
+		.camera_text5{position: fixed; top: 600px; right: 300px;}
+		#btn{position: fixed; top:100px; right: 50px; color: blue}
+		@keyframes rr{to{transform: rotate(1deg);}}
+
+		.section2{position: relative;}
+		.section2 h1{margin-bottom: 20px;}
+		.section2 h2{margin-bottom: 100px;}
+		.guel1{position: absolute; width: 600px; top: 850px; right: 0px}
+		.guel2{position: absolute; width: 500px; top: 1250px; left: 70px; }
+
+		.sagrada1{width: 300px; margin-top: 50px;
+			animation: rrr 3s infinite linear;}
+		@keyframes rrr{to{transform: rotate(360deg);}}
+
+
+
+	</style> 
+</head>
+
+<body>
+	<nav>
+		<div class="gnb">
+			<h3 class="logo"><a href="index3.html">LANTOUR</a></h3>
+			<ul>
+				<li><a href="index6.html" class="nav3"><p class="right">Min03</p></a></li>
+				<li><a href="index5.html" class="nav2"><p class="right">Min02</p></a></li>
+				<li><a href="index4.html" class="nav1"><p class="right">Min01</p></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<a href="#top"><img src="top.png" class="top"></a>
+
+	<section class="section1 row" id="top">
+		<h1 class="center"><mark class="mark_blue">&nbsp;Min01 : Photo&nbsp;</mark></h1>
+		<h2 class="center">구엘 공원 > 사그라다 파밀리아</h2>
+		<img src="min1_map.png" class="map">
+		<div class="box_guel" id="box_guel"></div>
+		<div class="box_sagrada" id="box_sagrada"></div>
+		<img src="min1_map_guel.jpg" id="map_guel" class="map_guel">
+        <img src="min1_map_sagrada.jpg" id="map_sagrada" class="map_sagrada">
+        <h2 class="area" id="area_guel">41⁰24’52”N 2⁰09’09”E</h2>
+        <h2 class="area" id="area_sagrada">41⁰24’13”N 2⁰10’27”E</h2>
+		<h2 class="center">위치명에 마우스를 올리면 위치 정보가 표시됩니다.<br>LANTOUR 1분차에는 가우디의 건축물을 구경하실 수 있습니다.<br>우측 상단의 버튼을 클릭하면 카메라가 활성화되니<br>사진을 찍으며 편하게 구경하시기 바랍니다.</h2>
+		<hr>
+	</section>
+
+	<section class="section_camera">
+		<button type="button" id="btn">CAMERA</button>
+
+    	<div id="displayDiv" style="display: none">
+    		<img src="https://media.giphy.com/media/mCGZhRjavuqYg/giphy.gif" class="flash">
+    		<img src="https://media.giphy.com/media/Gma7Nu5lWOAQE/source.gif" class="flash2">
+       		<img src="min1_camera.png" class="camera" id="camera">
+       		<h1 class="camera_text blue">찰칵</h1>
+       		<h1 class="camera_text2 blue">찰칵</h1>
+       		<h1 class="camera_text3 blue">찰칵</h1>
+       		<h1 class="camera_text4 blue">찰칵</h1>
+       		<h1 class="camera_text5 blue">찰칵</h1>
+   	 	</div> 
+	</section>
+
+
+
+	<section class="section2">
+		<img src="min1_guel3.png" class="guel1">
+		<div class="row">
+			<h1 class="center"><mark class="mark_red">&nbsp;구엘 공원&nbsp;</mark></h1>
+			<h2 class="center">이 곳은 안토니오 가우디의 작품 중 하나로 <br> 모자이크 장식의 건축물에서 곡선의<br>아름다움을 한껏 느끼실 수 있답니다.<br> 어서 카메라를 준비해주세요.<br>하나, 둘, 셋, 김치!</h2>
+			<img src="min1_guel1.jpg">
+			<img src="min1_guel2.jpg">
+			<img src="min1_guel3.jpg">
+		</div>
+		<img src="min1_guel1.png" class="guel2">		
+	</section>
+
+	<section class="section2">
+		<div class="row">
+			<h1 class="center"><mark class="mark_red">&nbsp;사그라다 파밀리아&nbsp;</mark></h1>
+			<h2 class="center">까탈루냐 모더니즘으로 지어진 최고의 대표작으로 손꼽히는 <br>사그라다 파밀리아 성당은 가우디의 유작으로<br> 가우디 사망 100주년인 2026년에 완공될 예정이랍니다.<br> 가까이서 보니 목이 빠질 것 같지 않나요, 여러분? <br></h2>
+			<img src="min1_sagrada1.jpg">
+			<img src="min1_sagrada2.jpg">	
+		</div>	
+	</section>
+
+
+	<section>
+		<div class="row">
+			<h2 class="center">그럼 이제 사그라다 파밀리아의<br>빙글빙글 계단을 타고 <br> 여행 2분차로 넘어가봅시다! </h2>
+			<a href="index5.html"><img src="min1_sagrada4.png" class="sagrada1"></a>
+		</div>
+	</section>
+
+</body>
+
+</html>
